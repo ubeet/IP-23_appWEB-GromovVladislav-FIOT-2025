@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оренда – MovieRent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/movies.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">MovieRent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="movies.html">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="rent.html">Оренда</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        <h2 class="text-center mb-4">Оренда серіалів</h2>
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Серіал</th>
+                    <th>Жанр</th>
+                    <th>Ціна</th>
+                    <th>Трейлер</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Stranger Things</td>
+                    <td>Містика</td>
+                    <td>45 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=b9EkMc79ZSU" target="_blank">Дивитись</a></td>
+                </tr>
+                <tr>
+                    <td>Breaking Bad</td>
+                    <td>Кримінал</td>
+                    <td>50 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=HhesaQXLuRY" target="_blank">Дивитись</a></td>
+                </tr>
+                <tr>
+                    <td>Peaky Blinders</td>
+                    <td>Драма</td>
+                    <td>40 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=oVzVdvGIC7U" target="_blank">Дивитись</a></td>
+                </tr>
+                <tr>
+                    <td>Game of Thrones</td>
+                    <td>Фентезі</td>
+                    <td>55 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank">Дивитись</a></td>
+                </tr>
+                <tr>
+                    <td>Better Call Saul</td>
+                    <td>Драма</td>
+                    <td>35 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=HN4oydykJFc" target="_blank">Дивитись</a></td>
+                </tr>
+                <tr>
+                    <td>Dark</td>
+                    <td>Наукова фантастика</td>
+                    <td>60 грн</td>
+                    <td><a href="https://www.youtube.com/watch?v=rrwycJ08PSA" target="_blank">Дивитись</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="mt-5">Заповніть форму для оренди</h3>
+        <form class="mt-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Ім'я</label>
+                <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+                <label for="film" class="form-label">Назва серіалу</label>
+                <input type="text" class="form-control" id="film" required />
+            </div>
+            <button type="submit" class="btn btn-info text-white">Орендувати</button>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

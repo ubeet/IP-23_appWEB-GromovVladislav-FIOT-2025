@@ -1,0 +1,28 @@
+.card {
+    background-color: #1f1f1f;
+    border: none;
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+}
+
+.card-title {
+    color: #00bcd4;
+}
+
+.card-text {
+    color: #e0e0e0;
+}
+
+.card-body {
+    color: #e0e0e0;
+}
+
+.movie-card img {
+    height: 200px;
+    object-fit: cover;
+}

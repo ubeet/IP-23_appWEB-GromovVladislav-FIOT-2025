@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти – MovieRent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/movies.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">MovieRent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="movies.html">Каталог</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rent.html">Оренда</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 flex-grow-1">
+        <h2 class="text-center mb-4">Контакти</h2>
+        <div class="contact-box mx-auto" style="max-width: 600px;">
+            <p><strong>📧 Email:</strong> support@movierent.com</p>
+            <p><strong>📞 Телефон:</strong> +380 123 456 789</p>
+            <p><strong>🏢 Адреса:</strong> вул. Сценаристів, 15, Київ, Україна</p>
+
+            <h5 class="mt-4">Напишіть нам:</h5>
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Ваше ім'я</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="usermail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="usermail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Повідомлення</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info text-white">Надіслати</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
